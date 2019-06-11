@@ -10,10 +10,8 @@ import UIKit
 
 protocol AddMedicamentViewControllerDelegate: class {
     func addMedicamentViewControllerDidCancel(_ controller: AddMedicamentViewController)
-    func addMedicamentViewController(_ controller: AddMedicamentViewController,
-                                     didFinishAdding med: Medicament)
-    func addMedicamentViewController(_ controller: AddMedicamentViewController,
-                                     didFinishEditing med: Medicament)
+    func addMedicamentViewController(_ controller: AddMedicamentViewController, didFinishAdding med: Medicament)
+    func addMedicamentViewController(_ controller: AddMedicamentViewController, didFinishEditing med: Medicament)
 }
 
 class AddMedicamentViewController: UITableViewController, UITextFieldDelegate {
@@ -31,23 +29,23 @@ class AddMedicamentViewController: UITableViewController, UITextFieldDelegate {
     
     weak var delegate: AddMedicamentViewControllerDelegate?
     
-    var medToEdit: Medicament?
+    var medicamentToEdit: Medicament?
     
-    //Mark:- Actions
+    //MARK:- Actions
     @IBAction func done(){
-        if let med = medToEdit {
-            med.name = textField.text!
-            med.numberOfPillsInBox = (numOfPillsField.text! as NSString).integerValue
-            med.currentNumberOfPillsInBox = (currentNumOfPillsField.text! as NSString).integerValue
-            med.expiryDate = expiryDatePicker.date
-            delegate?.addMedicamentViewController(self, didFinishEditing: med)
+        if let medicament = medicamentToEdit {
+            medicament.name = textField.text!
+            medicament.numberOfPillsInBox = (numOfPillsField.text! as NSString).integerValue
+            medicament.currentNumberOfPillsInBox = (currentNumOfPillsField.text! as NSString).integerValue
+            medicament.expiryDate = expiryDatePicker.date
+            delegate?.addMedicamentViewController(self, didFinishEditing: medicament)
         } else {
-            let med = Medicament()
-            med.name = textField.text!
-            med.numberOfPillsInBox = (numOfPillsField.text! as NSString).integerValue
-            med.currentNumberOfPillsInBox = (currentNumOfPillsField.text! as NSString).integerValue
-            med.expiryDate = expiryDatePicker.date
-            delegate?.addMedicamentViewController(self, didFinishAdding: med)
+            let medicament = Medicament()
+            medicament.name = textField.text!
+            medicament.numberOfPillsInBox = (numOfPillsField.text! as NSString).integerValue
+            medicament.currentNumberOfPillsInBox = (currentNumOfPillsField.text! as NSString).integerValue
+            medicament.expiryDate = expiryDatePicker.date
+            delegate?.addMedicamentViewController(self, didFinishAdding: medicament)
         }
     }
     
@@ -58,19 +56,19 @@ class AddMedicamentViewController: UITableViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
-        if let med = medToEdit {
+        if let medicament = medicamentToEdit {
             title = "Edit Med"
-            textField.text = med.name
-            numOfPillsField.text = String(med.numberOfPillsInBox)
-            currentNumOfPillsField.text = String(med.currentNumberOfPillsInBox)
-            expiryDatePicker.date = med.expiryDate
+            textField.text = medicament.name
+            numOfPillsField.text = String(medicament.numberOfPillsInBox)
+            currentNumOfPillsField.text = String(medicament.currentNumberOfPillsInBox)
+            expiryDatePicker.date = medicament.expiryDate
             doneBarButton.isEnabled = true
-            med.lessThanTenPercentOfTheBox(med.numberOfPillsInBox, med.currentNumberOfPillsInBox)
-            med.hasTheMedicamentValidExpiryDate(med.expiryDate)
+            medicament.lessThanTenPercentOfTheBox(medicament.numberOfPillsInBox, medicament.currentNumberOfPillsInBox)
+            medicament.hasTheMedicamentValidExpiryDate(medicament.expiryDate)
         }
     }
     
-    //Mark:- Text Field Delegates
+    //MARK:- Text Field Delegates
     func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
@@ -107,5 +105,3 @@ class AddMedicamentViewController: UITableViewController, UITextFieldDelegate {
         return true
     }
 }
-
-

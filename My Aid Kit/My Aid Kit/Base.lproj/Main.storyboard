@@ -12,7 +12,7 @@
         <!--My Aid Kit-->
         <scene sceneID="4Az-4X-Dda">
             <objects>
-                <tableViewController id="Z9s-EA-3dy" customClass="myAidKitViewController" customModule="My_Aid_Kit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Z9s-EA-3dy" customClass="MyAidKitViewController" customModule="My_Aid_Kit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eHQ-Hp-qrJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,7 +162,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RgL-aH-vdj">
-                                                    <rect key="frame" x="0.0" y="57" width="336" height="216"/>
+                                                    <rect key="frame" x="0.0" y="57" width="375" height="216"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="581874017.127707">
                                                         <!--2019-06-10 15:40:17 +0000-->
                                                     </date>
@@ -189,12 +189,12 @@
                     <navigationItem key="navigationItem" title="Add Med" id="bTM-eR-dGz">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="sj1-3N-Rmg">
                             <connections>
-                                <action selector="cancel" destination="oDB-td-pHm" id="0kL-On-Qm9"/>
+                                <action selector="cancel" destination="oDB-td-pHm" id="fiq-Rl-jeT"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="omh-u4-G7D">
                             <connections>
-                                <action selector="done" destination="oDB-td-pHm" id="Q1T-0B-opM"/>
+                                <action selector="done" destination="oDB-td-pHm" id="8j1-Co-zOC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

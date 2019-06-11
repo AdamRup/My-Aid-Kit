@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C40392D22AC472900706F28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40392C22AC472900706F28 /* AppDelegate.swift */; };
-		9C40392F22AC472900706F28 /* myAidKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40392E22AC472900706F28 /* myAidKitViewController.swift */; };
+		9C40392F22AC472900706F28 /* MyAidKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C40392E22AC472900706F28 /* MyAidKitViewController.swift */; };
 		9C40393222AC472900706F28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C40393022AC472900706F28 /* Main.storyboard */; };
 		9C40393422AC472B00706F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C40393322AC472B00706F28 /* Assets.xcassets */; };
 		9C40393722AC472B00706F28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C40393522AC472B00706F28 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		9C40392922AC472900706F28 /* My Aid Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Aid Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C40392C22AC472900706F28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C40392E22AC472900706F28 /* myAidKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAidKitViewController.swift; sourceTree = "<group>"; };
+		9C40392E22AC472900706F28 /* MyAidKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAidKitViewController.swift; sourceTree = "<group>"; };
 		9C40393122AC472900706F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C40393322AC472B00706F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C40393622AC472B00706F28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				9C40392C22AC472900706F28 /* AppDelegate.swift */,
-				9C40392E22AC472900706F28 /* myAidKitViewController.swift */,
+				9C40392E22AC472900706F28 /* MyAidKitViewController.swift */,
 				9C40393022AC472900706F28 /* Main.storyboard */,
 				9C40393322AC472B00706F28 /* Assets.xcassets */,
 				9C40393522AC472B00706F28 /* LaunchScreen.storyboard */,
@@ -147,7 +147,7 @@
 			files = (
 				9CEEC62A22AD0EFC00D7AEAF /* Medicament.swift in Sources */,
 				9CEEC62C22AD252700D7AEAF /* AddMedicamentViewController.swift in Sources */,
-				9C40392F22AC472900706F28 /* myAidKitViewController.swift in Sources */,
+				9C40392F22AC472900706F28 /* MyAidKitViewController.swift in Sources */,
 				9C40392D22AC472900706F28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
